@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Protoss
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Constructor\ here.\r\n\ \r\n\ @author\ (Jos\u00E9\ Silva)\ \r\n\ @version\ (21/07/2019)\r\n
+comment1.params=rol\ cont\ gcont
+comment1.target=Protoss(java.lang.String,\ EnergyCounter,\ Counter)
+comment1.text=\r\n\ Notese\ que\ para\ crear\ un\ Protoss,\ Terran\ o\ Zerg\ hay\ que\ darle\ un\ rol\ en\ especifico.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ collectDeposit()
+comment3.text=\r\n\ Este\ metodo\ sirve\ para\ interactuar\ con\ los\ depositos\ que\ dan\ cristales\ de\ energia\r\n
+comment4.params=
+comment4.target=void\ collectGasDeposit()
+comment5.params=
+comment5.target=void\ maxEnergy()
+numComments=6

@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Koprulu
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ @author\ (Jose\ Silva)\ \r\n\ @version\ (1.2\ 5/08/2019)\r\n
+comment1.params=p1\ p2
+comment1.target=Koprulu(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Notese\ que\ para\ crear\ un\ mundo\ de\ tipo\ MyWorld\ hay\ que\ enviarle\ dos\ parametros,\ estos\ parametros\ correspoden\ a\ la\ raza\ de\ los\ dos\ jugadores,\ siendo\ p1\ la\ raza\ del\ jugador1\ y\ p2\ la\ \r\n\ \ \ \ \ raza\ del\ jugador\ 2.\ \ \ \ \ \r\n
+comment2.params=num
+comment2.target=void\ crearDepositos(int)
+comment3.params=raza\ num\ start\ end
+comment3.target=void\ generarExtraterrestres(java.lang.String,\ int,\ int,\ int)
+comment3.text=El\ metodo\ generarExtraterrestres\ sirve\ para\ crear\ el\ mismo\ numero\ de\ miembros\ de\ una\ raza\ para\ los\ jugadores\r\n\ el\ parametro\ String\ a\ corresponde\ a\ la\ raza\ que\ queremos\ crear,\r\n\ el\ parametro\ int\ num\ corresponde\ al\ numero\ de\ miembros\ de\ una\ raza\ que\ queremos\ crear\ (el\ rol\ de\ cada\ miembro\ se\ pone\ al\ azar)\r\n\ el\ paramtro\ int\ start\ corresponde\ desde\ que\ parte\ del\ mapa\ se\ van\ a\ generar\ los\ extraterrestres.\r\n\ el\ parametro\ int\ end\ corresponde\ hasta\ que\ parte\ del\ mapa\ se\ van\ a\ generar\ los\ extraterrestres.\r\n\ \ \ \ \r\n
+comment4.params=
+comment4.target=void\ crear()
+comment4.text=En\ este\ metodo\ ya\ estoy\ creando\ el\ numero\ de\ extraterrestres\ que\ va\ a\ tenr\ cada\ jugador,\ el\ parametro\ p1Raza\ contiene\ el\ tipo\ de\ raza\ que\ el\ jugador\ 1\ escogio\ previamente\r\n\ \ \ \ \ en\ la\ pantalla\ de\ seleccionar\ una\ raza,\ el\ numero\ 5\ (de\ momento)\ significa\ que\ voy\ a\ crear\ 5\ extraterrestres\ para\ cada\ jugador,\ el\ 0\ y\ el\ getWidth()/2\ significa\ que\ voy\ a\ estar\ generando\r\n\ \ \ \ \ sus\ personajes\ hasta\ la\ mitad\ del\ mapa\ por\ eso\ getWidth()/2,\r\n\ \ \ \ \ Para\ los\ personajes\ del\ segundo\ jugador\ se\ realizar\ de\ manera\ semejante,\ el\ parametro\ p2Raza\ contiene\ el\ tipo\ de\ raza\ del\ jugador\ 2,\ el\ cual\ fue\ determinado\ al\ azar\ (de\ momento\ 3/08/2019)\r\n\ \ \ \ \ ,\ getWith()/2\ y\ getWidth()\ significa\ que\ voy\ a\ estar\ generando\ sus\ extraterrestres\ de\ la\ mitad\ del\ mapa\ hasta\ el\ final\ del\ mismo.\r\n
+comment5.params=
+comment5.target=java.lang.String\ generarParametro()
+comment5.text=Este\ metodo\ sirve\ para\ generar\ los\ roles\ al\ azar\ y\ asignarlos\ mientras\ estoy\ creando\ un\ numero\ de\ miembros\ de\ una\ especie.\r\n\ \r\n
+comment6.params=start\ end
+comment6.target=int\ getRandomNumber(int,\ int)
+comment6.text=este\ metodo\ tiene\ el\ nombre\ parecido\ a\ el\ metodo\ de\ greenfoot\ getRandomNumber\ (de\ hecho\ tiene\ el\ mismo\ nombre),\ pero\ ojo,\ que\ a\ este\ metodo\ hay\ que\ enviarle\ dos\ parametros,\ es\ como\ sobrecarga\r\n\ ,\ este\ metodo\ lo\ que\ hace\ es\ segun\ el\ parametro\ inicial\ y\ final\ que\ yo\ le\ mande,\ me\ genera\ un\ numero\ dentro\ de\ ese\ rango,\ es\ bastante\ mejor\ que\ el\ metodo\ de\ greenfoot\ getRandomNumber\ que\ solo\r\n\ genera\ un\ numero\ de\ 0\ al\ parametro\ que\ ud\ le\ de.\r\n
+comment7.params=
+comment7.target=void\ combate()
+comment8.params=
+comment8.target=void\ putCounters()
+comment9.params=
+comment9.target=void\ putCounters2()
+numComments=10
