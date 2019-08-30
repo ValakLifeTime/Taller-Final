@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=EnergiaTotal
+comment0.text=\r\n\ Esta\ clase\ es\ la\ encargada\ de\ llevar\ el\ contador\ de\ los\ recursos\ que\ son\ recogidos\ por\ los\ Constructores\ de\ cada\ especie.\r\n\ \r\n\ @author\ (Jose\ Silva)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=energia
+comment1.target=void\ setEnergia(int)
+comment2.params=
+comment2.target=EnergiaTotal()
+comment3.params=
+comment3.target=void\ act()
+comment4.params=energy
+comment4.target=void\ addEnergia(int)
+numComments=5

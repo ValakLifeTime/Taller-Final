@@ -1,5 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.*;
+import java.io.*;
+import java.lang.*;
 /**
  * Write a description of class MyWorld here.
  * 
@@ -78,6 +80,9 @@ public class Koprulu extends World
     }
     public void act()
     {
+        openFile();
+        agregarRegistro();
+        cerrar();
      checkStatus();
      String key = Greenfoot.getKey();
       if ("p".equals(key)) ;
@@ -347,6 +352,37 @@ public void checkStatus()
          Greenfoot.setWorld(new SelectCharacter("Terran"));
         }
         }
+    }
+    
+    private Formatter x;
+    private Scanner y;
+    public void openFile()
+    {
+        
+        try
+        {
+            x = new Formatter("game.txt");
+            y = new Scanner(new File("Koprulu.java"));
+        }
+        catch (Exception e)
+        {
+            System.out.println("Hay un error");
+        }
+        
+    }
+    public void agregarRegistro()
+    {
+        while(y.hasNext())
+        {
+            String a = y.next();
+            x.format("%s", a);
+        }
+        
+    }
+    public void cerrar()
+    {
+        x.close();
+        y.close();
     }
  
 }    

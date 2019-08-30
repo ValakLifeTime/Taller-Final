@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=SmallScreen
+comment1.params=Message\ height\ width\ duration
+comment1.target=SmallScreen(java.lang.String,\ int,\ int,\ int)
+comment2.params=Message\ height\ width\ duration\ empate
+comment2.target=SmallScreen(java.lang.String,\ int,\ int,\ int,\ java.lang.String)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=Message\ duration
+comment4.target=SmallScreen(java.lang.String,\ int)
+comment5.params=Message
+comment5.target=SmallScreen(java.lang.String)
+comment6.params=
+comment6.target=void\ deleteScreen()
+numComments=7

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Comando
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Comando\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=n\ bar
+comment1.target=Comando(java.lang.String,\ HealthBar)
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Comando\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=nombre
+comment2.target=Comando(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getNombre()
+comment4.params=
+comment4.target=HealthBar\ getBar()
+comment5.params=
+comment5.target=void\ act()
+numComments=6

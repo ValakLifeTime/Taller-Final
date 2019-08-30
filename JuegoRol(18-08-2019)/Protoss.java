@@ -1,4 +1,5 @@
 
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.*;
 /**
@@ -49,8 +50,9 @@ else if(rol=="Guerrero")
         tocarComandoP();
         checkLife();
          GreenfootImage image = getImage();  
-     image.scale(40, 40);
-        //curar();
+         image.scale(40, 40);
+        curar();
+       
         //conversionRecursos();
     }
     public boolean running()
@@ -98,17 +100,93 @@ else if(rol=="Guerrero")
          getWorld().removeObject(this);
         }
         }
-    public void curar()
+        
+    public void curarC()
     {
+         List<Protoss> lista = new ArrayList<Protoss>(); 
+        World world;
+        world = getWorld();
+        Koprulu koprulu = (Koprulu)world;
+        lista = koprulu.getProtossList();
         if(isTouching(Protoss.class))
         {
+           
             if(getRol() == "Medico")
             {
-                
-                turn(180);move(20);
-                
+                if(this.energia>40)
+                {
+                   
+                    this.energia -=20;
+                    
+                }
+              
+            }
+            
+            
+            for(int i=0; i<3; i++)
+            {
+
+                if(intersects(lista.get(i)))
+                {
+                    if(getRol()=="Cosntructor")
+                    {
+                        this.energia += 20;
+                        turn(180);move(60);
+                        
+                    }
+                    
+                }
+            }
+
+           
+        }
+    }
+    public void curar()
+    {
+        List<Protoss> lista = new ArrayList<Protoss>(); 
+        List<Protoss> listaG = new ArrayList<Protoss>(); 
+        World world;
+        world = getWorld();
+        Koprulu koprulu = (Koprulu)world;
+        lista = koprulu.getProtossList();
+        int aux = lista.size();
+        for(Protoss i: lista)
+        {
+            if(i.getRol()=="Constructor")
+            {
+                listaG.add(i);
             }
         }
+        
+        if(isTouching(Protoss.class))
+        {
+             
+            if(getRol() == "Medico")
+            {
+                if(this.energia>40)
+                {
+                   
+                    this.energia -=20;
+                   
+                }
+    
+            }           
+            for(int i=0; i<aux; i++)
+            {
+                if(intersects(lista.get(i)))
+                {
+                    if(getRol()=="Guerrero")
+                    {
+                        this.energia +=20;
+                        turn(180);move(50);
+                    }
+                    
+                }
+            }
+         
+        }
+       
+        
     }
     /*
      * Este metodo sirve para interactuar con los depositos que dan cristales de energia
